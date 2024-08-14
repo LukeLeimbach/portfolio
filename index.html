@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<!-- Run Tailwind: -->
+<!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <header class="
+    fixed p-4 gap-4 flex flex-no-wrap 
+    h-12 w-screen justify-center items-center flex-row pt-8
+    md:h-screen md:w-56 md:p-8 md:flex-col md:justify-start md:items-start md:fixed md:top-0 md:left-0 md:bg-primary md:text-quaternary md:shadow-lg
+  ">
+    <a href="#hero-section" class="text-xl w-fit overflow-hidden relative group text-accent font-bold p-1 border-l-2">
+      Luke Leimbach
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <a href="#contact-section" class="text-xl w-fit overflow-hidden relative group p-1 border-l-2">
+      Contact
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <a href="#portfolio-section" class="text-xl w-fit overflow-hidden relative group p-1 -mb-4 border-l-2">
+      Portfolio
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <a href="#web-dev" class="text-xl w-fit overflow-hidden relative group p-1 -mb-4 ml-4 border-l-2">
+      Web Dev
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <a href="#deep-learning" class="text-xl w-fit overflow-hidden relative group p-1 -mb-4 ml-4 border-l-2">
+      Deep Learning
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <a href="#fun" class="text-xl w-fit overflow-hidden relative group p-1 ml-4 border-l-2">
+      Fun
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <a href="#about-section" class="text-xl w-fit overflow-hidden relative group p-1 border-l-2">
+      About me
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <a href="#resume-section" class="text-xl w-fit overflow-hidden relative group p-1 border-l-2">
+      Resume
+      <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+    </a>
+    <div class="mt-auto flex flex-row flex-no-wrap justify-center w-full relative">
+      <a href="https://www.linkedin.com/in/luke-leimbach/" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 self-center hover:text-accent transition">
+        <ion-icon name="logo-linkedin" class="text-5xl"></ion-icon>
+        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+      </a>
+      <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 self-center hover:text-accent transition">
+        <ion-icon name="logo-github" class="text-5xl"></ion-icon>
+        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-current transition-all duration-200 group-hover:w-full"></span>
+      </a>
+    </div>
+  </header>
+
+  <div id="body-wrapper" class="bg-primary text-quaternary m-0 p-0 flex flex-col flex-no-wrap md:ml-56 h-full overflow-x-hidden">
+    <section id="hero-section" class="bg-hero-pattern bg-cover w-full md:w-[calc(100vw-14rem)] min-h-screen py-8 flex flex-col justify-center items-center shadow-md">
+      <div class="w-5/6 md:w-3/5">
+        <h1 class="text-8xl mb-2 text-accent font-bold">Luke Leimbach</h1>
+        <h2 class="text-5xl mb-8 font-bold">Full Stack Developer</h2>
+  
+        <div class="flex flex-row flex-wrap w-full h-fit gap-4 mb-8">
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Web Development</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Mobile Development</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">eCommerce</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Deep Learning</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Data Analytics</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Data Visualization</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Google Cloud Platform</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Meta Ad Campaigns</p>
+        </div>
+  
+        <h3 class="text-2xl mb-8">
+          My goal is to develop and improve my skills as an engineer and problem solver by working in an environment that prioritizes <span class="font-bold text-accent">learning</span>,
+          <span class="font-bold text-accent">mentorship</span>, and <span class="font-bold text-accent">excellence</span>. My core values are 
+          <span class="font-bold text-accent">extreme ownership</span>, <span class="font-bold text-accent">humility</span>, <span class="font-bold text-accent">mastery</span> with a commitment to continual growth mentally,
+          physically, and spiritually.
+        </h3>
+  
+        <div class="flex flex-row gap-4">
+          <a href="#contact-section" class="text-2xl font-bold w-fit overflow-hidden relative group px-2 pt-[6px] bg-accent rounded-lg hover:bg-accent/80 transition hover:shadox-2xl">
+            Hire me
+            <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+          </a>
+          <a href="#portfolio-section" class="text-2xl font-bold w-fit overflow-hidden relative group px-2 py-1 border-4 border-accent rounded-lg transition hover:bg-accent/80 hover:border-accent/80 hover:shadow-2xl">
+            Portfolio
+            <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <seciton id="contact-section" class="md:w-[calc(100vw-14rem)] py-8 shadow-md">
+      <div class="mx-8">
+        <h1 class="text-6xl mb-4 font-bold text-center">Contact</h1>
+        <h2 class="text-3xl mb-8 text-center"><span class="font-bold text-accent">Want me on your team?</span> Shoot me a call or email.</h2>
+        <div class="flex flex-row flex-wrap w-full gap-8 justify-center mb-8">
+          <div class="flex flex-row flex-no-wrap items-center gap-2 rounded-md bg-secondary px-2 py-1">
+            <ion-icon name="call" class="text-3xl"></ion-icon>
+            <p class="text-2xl">720-325-4088</p>
+          </div>
+          <div class="flex flex-row flex-no-wrap items-center gap-2 rounded-md bg-secondary px-2 py-1">
+            <ion-icon name="mail" class="text-3xl"></ion-icon>
+            <p class="text-2xl">Luke.Leimbach@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </seciton>
+    
+    <section id="portfolio-section" class="md:w-[calc(100vw-14rem)] py-8 shadow-md">
+      <div class="mx-8">
+        <h1 class="text-6xl mb-8 font-bold text-center mb-8">Portfolio</h1>
+        <div class="flex flex-wrap flex-row justify-center gap-8">
+          
+          <h2 id="web-dev" class="-mb-4 text-5xl text-start md:w-5/6 relative underline">Web Development</h2>
+          <!-- Tiger Window Cleaning -->
+          <div class="md:w-5/6 shadow-xl">
+            <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
+              <div class="flex flex-col relative w-5/6">
+                <h3 class="text-5xl font-bold mb-2 pb-2 border-b-2 text-center border-tertiary">Tiger Window Cleaning</h3>
+                <p class="text-xl mb-4">
+                  Tiger Window Cleaning is an Auburn based window cleaning company that comissioned a custom website. The goal of the site is to
+                  show Jack's (the owner) work and awesome personality in a professional looking site. As part of a personal challenge, I created the site
+                  from scratch.
+                </p>
+                <ul class="list-disc ml-6">
+                  <li class="text-xl mb-4">
+                    Developed with <span class="font-bold text-accent">React</span> and <span class="font-bold text-accent">Tailwind CSS</span>.
+                    Hosted on <span class="font-bold text-accent">Firebase</span>. 
+                  </li>
+                </ul>
+                <div class="mb-4 flex flex-row justify-start gap-2">
+                  <h4 class="text-xl">Contributors:</h4>
+                  <div>
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Luke Leimbach
+                    </a>
+                  </div>
+                </div>
+                <a href="https://tiger-window-cleaning.web.app/" target="_blank" class=" mb-2 text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 bg-accent rounded-lg transition hover:bg-accent/80 hover:shadow-2xl">
+                  Live site
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+                <a href="https://github.com/LukeLeimbach/tiger-window-cleaning" target="_blank" class="text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 border-4 border-accent rounded-lg transition hover:bg-accent/80 hover:border-accent/80 hover:shadow-2xl">
+                  See GitHub
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+              </div>
+              <div class="w-1/4 flex items-center">
+                <img src="./public/img/twc-logo.jpg" alt="Project Image" class="relative rounded-lg mb-4 w-full">
+              </div>
+            </div>
+          </div>
+
+          <!-- Leo Main -->
+          <div class="md:w-5/6 shadow-xl">
+            <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
+              <div class="flex flex-col relative w-5/6">
+                <h3 class="text-5xl font-bold mb-2 pb-2 border-b-2 text-center border-tertiary">Leo Main</h3>
+                <p class="text-xl mb-4">
+                  Leo Main is a company that sells acoustic wall panneling. My role in this project was to create three widgets.
+                </p>
+                <ul class="list-disc ml-6">
+                  <li class="text-xl mb-4">
+                    <span class="font-bold text-accent">Price calculator</span> - A widget that calculates the price of a wall based on the user's input dimensions.
+                  </li>
+                  <li class="text-xl mb-4">
+                    <span class="font-bold text-accent">Audio comparison</span> - A widget that compares the audio quality of a room with and without the pannels.      
+                  </li>
+                  <li class="text-xl mb-4">
+                    <span class="font-bold text-accent">Image Slider</span> - A widget that slides to show a before and after of a room with pannels installed.
+                  </li>
+                </ul>
+                <div class="mb-4 flex flex-row justify-start gap-2">
+                  <h4 class="text-xl">Contributors:</h4>
+                  <div class="flex gap-2">
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Luke Leimbach
+                    </a>
+                    <a href="https://leomain.com/?srsltid=AfmBOopvTRVBej_YOzGQ1h_rEzcWwm5EspT5560O2NDZVfO6dWHvY3Fb" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Leo Main Crew
+                    </a>
+                  </div>
+                </div>
+                <a href="https://leomain.com/" target="_blank" class=" mb-2 text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 bg-accent rounded-lg transition hover:bg-accent/80 hover:shadow-2xl">
+                  Live site
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+                <a href="https://github.com/LukeLeimbach/LeoMain-Documentation" target="_blank" class="text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 border-4 border-accent rounded-lg transition hover:bg-accent/80 hover:border-accent/80 hover:shadow-2xl">
+                  See GitHub
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+              </div>
+              <div class="w-1/4 flex items-center">
+                <img src="./public/img/lm-logo.png" alt="Project Image" class="relative rounded-lg mb-4 w-full">
+              </div>
+            </div>
+          </div>
+
+          <h2 id="deep-learning" class="-mb-4 text-5xl text-start md:w-5/6 relative underline">Deep Learning</h2>
+          <!-- Fine-tuned Comparison -->
+          <div class="md:w-5/6 shadow-xl">
+            <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
+              <div class="flex flex-col relative w-5/6">
+                <h3 class="text-5xl font-bold mb-2 pb-2 border-b-2 text-center border-tertiary">Fine-tuned model evaluation</h3>
+                <p class="text-xl mb-4">
+                  During my study abroad semester at TU Graz in Austria, our team worked to answer the question:
+                  "What effect does fine tuning have on a powerful pre-trained model?" Using the new (at the time) Falcion-7b model,
+                  we concluded that there was a significant increase in accuracy.
+                </p>
+                <div class="mb-4 flex flex-row justify-start gap-2">
+                  <h4 class="text-xl">Contributors:</h4>
+                  <div class="flex gap-2 flex-wrap">
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Luke Leimbach
+                    </a>
+                    <p class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 cursor-text">
+                      Joseph Juri
+                    </p>
+                    <p class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 cursor-text">
+                      Raphael Kandler
+                    </p>
+                  </div>
+                </div>
+                <a href="https://github.com/LukeLeimbach/fine-tuned-model-evaluation" target="_blank" class="text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 border-4 border-accent rounded-lg transition hover:bg-accent/80 hover:border-accent/80 hover:shadow-2xl">
+                  See GitHub
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- NN From Scratch -->
+          <div class="md:w-5/6 shadow-xl">
+            <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
+              <div class="flex flex-col relative w-5/6">
+                <h3 class="text-5xl font-bold mb-2 pb-2 border-b-2 text-center border-tertiary">Linear NN From Scratch</h3>
+                <p class="text-xl mb-4">
+                  During my Deep Learning course at the University of Montana, I learned to create a linear neural network from scratch.
+                  The goal was to apply the math and theory of a neural network to a ficitonal problem. My model was capable of forward propogation,
+                  back propogation, and gradient descent.
+                </p>
+                <div class="mb-4 flex flex-row justify-start gap-2">
+                  <h4 class="text-xl">Contributors:</h4>
+                  <div class="flex gap-2 flex-wrap">
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Luke Leimbach
+                    </a>
+                  </div>
+                </div>
+                <a href="https://github.com/LukeLeimbach/dl-nn-from-scratch/blob/main/umt_spring2024_dl_assignment_2_v2.ipynb" target="_blank" class="text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 border-4 border-accent rounded-lg transition hover:bg-accent/80 hover:border-accent/80 hover:shadow-2xl">
+                  See GitHub
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Wall Music -->
+          <h2 id="fun" class="-mb-4 text-5xl text-start md:w-5/6 relative underline">Fun Projects</h2>
+          <div class="md:w-5/6 shadow-xl mb-8">
+            <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
+              <div class="flex flex-col relative w-5/6">
+                <h3 class="text-5xl font-bold mb-2 pb-2 border-b-2 text-center border-tertiary">Wall Music</h3>
+                <p class="text-xl mb-4">
+                  Wall Music is a music streaming service for Discord. The goal of this project is take what's great about other music bots
+                  and streamline the UI/UX to make it more user friendly.
+                </p>
+                <ul class="list-disc ml-6">
+                  <li class="text-xl mb-4">
+                    The bot iself is made with <span class="font-bold text-accent">Discord.js</span> and <span class="font-bold text-accent">Node.js</span>
+                    with its queue live on <span class="font-bold text-accent">Cloud Firestore</span> for realtime queue updates between the bot and web app.
+                  </li>
+                  <li class="text-xl mb-4">
+                    The web app is made with <span class="font-bold text-accent">React</span> and <span class="font-bold text-accent">Ionic</span> hosted
+                    on <span class="font-bold text-accent">Firebase</span>.                  </li>
+                </ul>
+                <div class="mb-4 flex flex-row justify-start gap-2">
+                  <h4 class="text-xl">Contributors:</h4>
+                  <div>
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Luke Leimbach
+                    </a>
+                  </div>
+                </div>
+                <a href="https://github.com/LukeLeimbach/music-discord-bot/tree/main" target="_blank" class="text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 border-4 border-accent rounded-lg transition hover:bg-accent/80 hover:border-accent/80 hover:shadow-2xl">
+                  See GitHub
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+              </div>
+              <div class="w-1/4 flex items-center">
+                <img src="./public/img/wm-logo.png" alt="Project Image" class="relative rounded-lg mb-4 w-full">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <seciton id="about-section" class="md:w-[calc(100vw-14rem)] py-8 shadow-md">
+      <h1 class="text-6xl mb-4 font-bold text-center">About me</h1>
+      <div class="mx-8 flex justify-center w-fit">
+
+        <!-- About me -->
+        <div class="md:w-5/6 shadow-xl drop-shadow-sm mb-8">
+          <div class="shadow-xl p-8 rounded-lg flex flex-row gap-8">
+            <div class="flex flex-col w-2/3">
+              <p class="text-xl mb-4">
+                I am a <span class="font-bold text-accent">technical problem solver</span>. I discovered my love for computers at 10 years old 
+                when I downloaded Minecraft mods on my dad's old work computer. I still feel like a kid when I'm coding. I'm always tinkering 
+                and finding new problems to solve.<br><br>
+                The <span class="font-bold text-accent">biggest lifestyle changeup</span> I've ever had was living in Austria for 
+                five months while studying at the Graz Technical University. There I was blessed to work with the smartest, most diverse
+                peers on awesome deep learning projects.<br><br>
+                <span class="font-bold text-accent">Outside of coding</span>, I'm a devout partner, world traveler, rock climber, spear fisherman, and entrepreneur.
+              </p>
+            </div>
+            <div class="w-1/3 relative flex items-center justify-center flex-col gap-0">
+              <div class="mb-2">
+                <img src="./public/img/spear.png" alt="Project Image" class="relative rounded-full w-full">
+                <p class="text-center">Pompano dinner in Los Barriles, Mexico BCS</p>
+              </div>
+              <div class="mb-2">
+                <img src="./public/img/fly.png" alt="Project Image" class="relative rounded-full w-full">
+                <p class="text-center">Flying over Missoula, MT in a Cessna 152</p>
+              </div>
+              <!-- <div>
+                <img src="./public/img/me.png" alt="Project Image" class="relative rounded-full w-full">
+                <p class="text-center">Traveling in Ljubljana, Slovenia</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </seciton>
+
+    <seciton id="resume-section" class="md:w-[calc(100vw-14rem)] py-8 shadow-md">
+      <h1 class="text-6xl mb-4 font-bold text-center">Resume</h1>
+      <div class="w-full flex justify-center">
+        <embed src="./public/my-resume.pdf" type='application/pdf' width="800" height="1000">
+      </div>
+    </seciton>
+
+  </div>
+</body>
+
+</html>
