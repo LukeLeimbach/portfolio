@@ -76,11 +76,14 @@
         <div class="flex flex-row flex-wrap w-full h-fit gap-4 mb-8">
           <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Web Development</p>
           <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Mobile Development</p>
-          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">eCommerce</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Data Driven Design</p>
           <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Deep Learning</p>
           <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Data Analytics</p>
           <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Data Visualization</p>
           <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Google Cloud Platform</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Firebase</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Shopify</p>
+          <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">eCommerce</p>
           <p class="font-bold text-xl rounded-xl shadow-xl bg-secondary py-1 px-4">Meta Ad Campaigns</p>
         </div>
   
@@ -123,10 +126,86 @@
 
     <section id="portfolio-section" class="md:w-[calc(100vw-14rem)] py-8 shadow-md">
       <div class="mx-8">
-        <h1 class="text-6xl mb-8 font-bold text-center mb-8">Portfolio</h1>
+        <h1 class="text-6xl mb-8 font-bold text-center">Portfolio</h1>
         <div class="flex flex-wrap flex-row justify-center gap-8">
           
-          <h2 id="web-dev" class="-mb-4 text-5xl text-start md:w-5/6 relative underline">Web Development</h2>
+          <h2 id="web-dev" class="text-5xl text-start md:w-5/6 relative underline">Web Development</h2>
+
+          <!-- Johnson RV -->
+          <div class="md:w-5/6 shadow-xl">
+            <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
+              <div class="flex flex-col relative w-5/6">
+                <h3 class="text-5xl font-bold mb-2 pb-2 border-b-2 text-center border-tertiary">Johnson RV</h3>
+                <p class="text-xl mb-4">
+                  Johnson RV, an RV dealer out of the Pacific Northwest, needs a website that their sales team can use to identify promising leads from Craigslist. I'm in the process of building
+                  a website that scrapes Craigslist every day and posts the results on the site. <span class="font-bold text-accent">The kicker</span> is that prices will be estimated using AI based on JRV's buying criteria to allow sales reps 
+                  to sort posts by deals with the best margins.
+                </p>
+                <ul class="list-disc ml-6">
+                  <li class="text-xl mb-4">
+                    Front-end: <span class="font-bold text-accent">React</span>, <span class="font-bold text-accent">Tailwind CSS</span>
+                  </li>
+                  <li class="text-xl mb-4">
+                    Back-end: <span class="font-bold text-accent">BeautifulSoup4</span>, <span class="font-bold text-accent">PyTorch</span>, <span class="font-bold text-accent">GCP Cloud Scheduler</span>
+                  </li>
+                  <li class="text-xl mb-4">
+                    Website, NoSQL databse, and functions hosted on <span class="font-bold text-accent">Firebase</span>.
+                  </li>
+                </ul>
+                <div class="mb-4 flex flex-row justify-start gap-2 flex-wrap">
+                  <h4 class="text-xl">Contributors:</h4>
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Luke Leimbach
+                    </a>
+                </div>
+              </div>
+              <div class="w-1/4 flex items-center">
+                <img src="./public/img/jrv-logo.png" alt="Project Image" class="relative rounded-lg mb-4 w-full bg-quaternary py-8 px-2">
+              </div>
+            </div>
+          </div>
+
+          <!-- Dental Accessories -->
+          <div class="md:w-5/6 shadow-xl">
+            <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
+              <div class="flex flex-col relative w-5/6">
+                <h3 class="text-5xl font-bold mb-2 pb-2 border-b-2 text-center border-tertiary">Dental Accessories</h3>
+                <p class="text-xl mb-4">
+                  Dental Accessories is a Shopify eCommerce website that specializes in selling dental equipment to dentists and hygienists. As the <span class="font-bold text-accent">lead web develoepr</span>,
+                  I am responsible for all site development, maintenance, and testing. I report directly to the CEO and work closely with the marketing and social media team to develop custom widgets and improve UX.
+                  My primary goal is to improve conversion rates. My self-directed workflow involves meeting with my team, analyzing user data with Microsoft Clarity, and implementing A/B tests.
+                </p>
+                <ul class="list-disc ml-6">
+                  <li class="text-xl mb-4">
+                    Developed with <span class="font-bold text-accent">Liquid</span>, <span class="font-bold text-accent">HTML / CSS</span>, the <span class="font-bold text-accent">Shopify Admin Pannel</span>.
+                  </li>
+                </ul>
+                <div class="mb-4 flex flex-row justify-start gap-2 flex-wrap">
+                  <h4 class="text-xl">Contributors:</h4>
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Luke Leimbach
+                    </a>
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Ishir Narayan
+                    </a>
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Riley Shrader
+                    </a>
+                    <a href="https://github.com/LukeLeimbach" target="_blank" class="text-xl w-fit overflow-hidden relative group p-1 bg-primary rounded-md px-2 py-1 hover:bg-primary/70 transition duration-200">
+                      Haley Post
+                    </a>
+                </div>
+                <a href="https://dentalaccessories.org" target="_blank" class=" mb-2 text-center w-full relative mt-auto text-xl font-bold w-fit overflow-hidden relative group px-2 py-1 bg-accent rounded-lg transition hover:bg-accent/80 hover:shadow-2xl">
+                  Live site
+                  <span class="absolute bottom-0 left-0 w-0 h-1 bg-current transition-all duration-200 group-hover:w-full"></span>
+                </a>
+              </div>
+              <div class="w-1/4 flex items-center">
+                <img src="./public/img/da-logo.png" alt="Project Image" class="relative rounded-lg mb-4 w-full bg-quaternary py-8 px-2">
+              </div>
+            </div>
+          </div>
+
           <!-- Tiger Window Cleaning -->
           <div class="md:w-5/6 shadow-xl">
             <div class="bg-secondary/60 p-8 rounded-lg flex flex-row gap-8">
